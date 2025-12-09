@@ -18,8 +18,9 @@ export function ParticlesWrapper({ children }: { children: React.ReactNode }) {
     <div className="relative min-h-screen w-full">
       <Particles
         className="absolute inset-0 z-0"
-        quantity={100}
+        quantity={300}
         ease={80}
+        size={0.4}
         color={color}
         refresh
       />

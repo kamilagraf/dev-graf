@@ -19,31 +19,27 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <div className="fixed top-4 right-4">
-        <button
-          className="p-2 rounded-md border border-border bg-background hover:bg-accent transition-colors"
-          aria-label="Toggle theme"
-        >
-          <Sun className="h-5 w-5" />
-        </button>
-      </div>
+      <button
+        className="p-2 bg-background transition-colors cursor-pointer group"
+        aria-label="Toggle theme"
+      >
+        <Sun className="h-5 w-5 transition-colors group-hover:text-indigo-600" />
+      </button>
     );
   }
 
   return (
-    <div className="fixed top-4 right-4">
-      <button
-        onClick={toggleTheme}
-        className="p-2 rounded-md border border-border bg-background hover:bg-accent transition-colors"
-        aria-label="Toggle theme"
-      >
-        {theme === "dark" ? (
-          <Sun className="h-5 w-5" />
-        ) : (
-          <Moon className="h-5 w-5" />
-        )}
-      </button>
-    </div>
+    <button
+      onClick={toggleTheme}
+      className="p-2 bg-background transition-colors cursor-pointer group"
+      aria-label="Toggle theme"
+    >
+      {theme === "dark" ? (
+        <Sun className="h-5 w-5 transition-colors group-hover:text-indigo-600" />
+      ) : (
+        <Moon className="h-5 w-5 transition-colors group-hover:text-indigo-600" />
+      )}
+    </button>
   );
 }
 

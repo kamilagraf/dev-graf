@@ -1,51 +1,34 @@
-import Image from "next/image";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { Nav } from "@/components/nav";
+import { Hero } from "@/components/hero";
 import { ParticlesWrapper } from "@/components/particles-wrapper";
 
 export default function Home() {
   return (
     <ParticlesWrapper>
-      <div className="flex min-h-screen items-center justify-center font-sans">
-        <ThemeToggle />
-        <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 sm:items-start">
-          <Image
-            className="dark:invert"
-            src="/next.svg"
-            alt="Next.js logo"
-            width={100}
-            height={20}
-            priority
-          />
-          <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-            <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            under construction...
-            </h1>
-          </div>
-          <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-            <a
-              className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="dark:invert"
-                src="/vercel.svg"
-                alt="Vercel logomark"
-                width={16}
-                height={16}
-              />
-              Deploy Now
-            </a>
-            <a
-              className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Documentation
-            </a>
-          </div>
+      <div className="flex flex-col min-h-screen font-sans max-w-7xl mx-auto">
+        <Nav />
+        <main className="w-full">
+          <section id="about" className="min-h-screen flex items-center justify-center">
+            <Hero />
+          </section>
+          
+          <section id="skills" className="min-h-screen flex items-center justify-center">
+            <div className="max-w-3xl">
+              <h2 className="text-3xl font-bold text-black dark:text-zinc-50 mb-8">Skills</h2>
+            </div>
+          </section>
+          
+          <section id="experience" className="min-h-screen flex items-center justify-center">
+            <div className="max-w-3xl">
+              <h2 className="text-3xl font-bold text-black dark:text-zinc-50 mb-8">Experience</h2>
+            </div>
+          </section>
+          
+          <section id="cv" className="min-h-screen flex items-center justify-center">
+            <div className="max-w-3xl">
+              <h2 className="text-3xl font-bold text-black dark:text-zinc-50 mb-8">CV</h2>
+            </div>
+          </section>
         </main>
       </div>
     </ParticlesWrapper>
