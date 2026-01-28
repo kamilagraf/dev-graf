@@ -23,7 +23,7 @@ export function ThemeToggle() {
         className="p-2 bg-background transition-colors cursor-pointer group"
         aria-label="Toggle theme"
       >
-        <Sun className="h-5 w-5 transition-colors group-hover:text-indigo-600" />
+        <Sun className="h-5 w-5 transition-colors group-hover:text-purple-600" />
       </button>
     );
   }
@@ -35,9 +35,9 @@ export function ThemeToggle() {
       aria-label="Toggle theme"
     >
       {theme === "dark" ? (
-        <Sun className="h-5 w-5 transition-colors group-hover:text-indigo-600" />
+        <Sun className="h-5 w-5 transition-colors group-hover:text-purple-600" />
       ) : (
-        <Moon className="h-5 w-5 transition-colors group-hover:text-indigo-600" />
+        <Moon className="h-5 w-5 transition-colors group-hover:text-purple-600" />
       )}
     </button>
   );
