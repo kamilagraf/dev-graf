@@ -1,7 +1,8 @@
 import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
 import { Skills } from "@/components/skills";
-import { ParticlesWrapper } from "@/components/particles-wrapper";
+import { Experience } from "@/components/experience";
+import { ParticlesWrapper } from "@/components/ui/particles-wrapper";
 
 export default function Home() {
   return (
@@ -17,10 +18,8 @@ export default function Home() {
             <Skills />
           </section>
           
-          <section id="experience" className="min-h-screen flex items-center justify-center">
-            <div className="max-w-3xl">
-              <h2 className="text-3xl font-bold text-black dark:text-zinc-50 mb-8">Experience</h2>
-            </div>
+          <section id="experience" className="min-h-screen pb-20">
+            <Experience />
           </section>
           
           <section id="cv" className="min-h-screen flex items-center justify-center">

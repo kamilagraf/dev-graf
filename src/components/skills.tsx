@@ -24,7 +24,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <div className="max-w-7xl mx-auto px-8 py-20">
+    <div className="max-w-7xl mx-auto">
       <div className="flex flex-col gap-12">
         <div>
           <h2 className="text-5xl font-bold dark:text-white text-zinc-700 mb-4">Tech stack</h2>
@@ -36,7 +36,7 @@ export function Skills() {
             return (
               <div
                 key={skill.name}
-                className="flex flex-col items-center justify-center p-6 rounded-xl bg-zinc-50 dark:bg-zinc-800/30 backdrop-blur-sm border border-zinc-300/50 dark:border-zinc-700/20 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 transition-all duration-300 cursor-pointer group"
+                className="flex flex-col items-center justify-center p-6 rounded-xl bg-zinc-50 dark:bg-zinc-950 backdrop-blur-sm border border-zinc-300/50 dark:border-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-900/30 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group"
               >
                 <skill.icon className={`w-12 h-12 ${skill.color} mb-3 group-hover:scale-110 transition-transform duration-300`} />
                 <span className="text-base font-bold dark:text-white text-zinc-800">{skill.name}</span>

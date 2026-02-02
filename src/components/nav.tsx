@@ -16,25 +16,31 @@ export function Nav() {
       <div className="flex items-center gap-6">
         <button
           onClick={() => scrollToSection("about")}
-          className="text-sm text-purple-600 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-600 transition-colors cursor-pointer font-semibold"
+          className="text-sm text-zinc-500 dark:text-zinc-300 hover:text-purple-800 dark:hover:text-purple-800 transition-colors cursor-pointer font-semibold"
         >
           About
         </button>
         <button
           onClick={() => scrollToSection("skills")}
-          className="text-sm text-purple-600 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-600 transition-colors cursor-pointer font-semibold"
+          className="text-sm text-zinc-500 dark:text-zinc-300 hover:text-purple-800 dark:hover:text-purple-800 transition-colors cursor-pointer font-semibold"
         >
           Skills
         </button>
         <button
           onClick={() => scrollToSection("experience")}
-          className="text-sm text-purple-600 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-600 transition-colors cursor-pointer font-semibold"
+          className="text-sm text-zinc-500 dark:text-zinc-300 hover:text-purple-800 dark:hover:text-purple-800 transition-colors cursor-pointer font-semibold"
         >
           Experience
         </button>
         <button
+          onClick={() => scrollToSection("contact")}
+          className="text-sm text-zinc-500 dark:text-zinc-300 hover:text-purple-800 dark:hover:text-purple-800 transition-colors cursor-pointer font-semibold"
+        >
+          Contact
+        </button>
+        <button
           onClick={() => scrollToSection("cv")}
-          className="text-sm px-4 py-1 rounded-md border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-zinc-300 transition-colors cursor-pointer font-semibold"
+          className="text-sm px-4 py-1 rounded-md border border-purple-600 text-purple-600 hover:bg-purple-800 hover:border-purple-800 hover:text-zinc-300 transition-colors cursor-pointer font-semibold"
         >
           CV
         </button>
