@@ -38,9 +38,15 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <button
               onClick={() => scrollToSection("contact")}
-              className="px-6 py-3 rounded-md bg-purple-600 text-white font-semibold hover:bg-purple-800 transition-colors cursor-pointer"
+              className="group relative cursor-pointer overflow-hidden rounded-xl p-[2px] transition-all duration-300 hover:shadow-lg hover:shadow-blue-900/40 hover:-translate-y-0.5"
             >
-              Get In Touch
+              <span
+                className="absolute -inset-[2px] z-0 rounded-xl bg-[conic-gradient(from_0deg,#1e3a8a,#581c87,#1e3a8a)] opacity-100 group-hover:animate-[gradient-border-spin_3s_linear_infinite]"
+                aria-hidden
+              />
+              <span className="relative z-10 flex items-center rounded-[10px] bg-background/80 backdrop-blur-sm px-6 py-3 text-foreground font-semibold transition-all duration-300">
+                Get In Touch
+              </span>
             </button>
             <button
               onClick={() => scrollToSection("cv")}
@@ -99,7 +105,7 @@ export function Hero() {
 
           <div className="rounded-2xl p-8 flex-1 mt-16 shadow-[0_0_50px_rgba(147,51,234,0.15)] dark:shadow-[0_0_50px_rgba(147,51,234,0.15)]">
             <div className="flex flex-col gap-6">
-              <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 backdrop-blur-sm hover:bg-zinc-100 dark:hover:bg-zinc-900/30 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
+              <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-600/20 flex items-center justify-center group-hover/item:bg-purple-200 dark:group-hover/item:bg-purple-600/30 transition-all duration-300 group-hover/item:scale-110">
                   <Code className="w-6 h-6 text-purple-600 dark:text-purple-400 group-hover/item:text-purple-700 dark:group-hover/item:text-purple-300 transition-colors" />
                 </div>
@@ -109,7 +115,7 @@ export function Hero() {
                 </div>
               </div>
 
-              <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 backdrop-blur-sm hover:bg-zinc-100 dark:hover:bg-zinc-900/30 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
+              <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-600/20 flex items-center justify-center group-hover/item:bg-purple-200 dark:group-hover/item:bg-purple-600/30 transition-all duration-300 group-hover/item:scale-110">
                   <Rocket className="w-6 h-6 text-purple-600 dark:text-purple-400 group-hover/item:text-purple-700 dark:group-hover/item:text-purple-300 transition-colors" />
                 </div>
@@ -119,7 +125,7 @@ export function Hero() {
                 </div>
               </div>
 
-              <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 backdrop-blur-sm hover:bg-zinc-100 dark:hover:bg-zinc-900/30 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
+              <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-600/20 flex items-center justify-center group-hover/item:bg-purple-200 dark:group-hover/item:bg-purple-600/30 transition-all duration-300 group-hover/item:scale-110">
                   <Shield className="w-6 h-6 text-purple-600 dark:text-purple-400 group-hover/item:text-purple-700 dark:group-hover/item:text-purple-300 transition-colors" />
                 </div>

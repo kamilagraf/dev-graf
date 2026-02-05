@@ -52,7 +52,7 @@ export function Experience() {
                 </div>
 
                 <div className="flex-1 relative">
-                  <div className="p-6 rounded-xl bg-zinc-50 dark:bg-zinc-950 border border-zinc-300/50 dark:border-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-900/30 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 group cursor-pointer">
+                  <div className="p-6 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 border border-zinc-300/50 dark:border-zinc-900 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 group cursor-pointer">
                     <div className="absolute top-4 right-4 text-sm font-medium text-zinc-400 dark:text-zinc-400">
                       {exp.period}
                     </div>

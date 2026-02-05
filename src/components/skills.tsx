@@ -31,18 +31,27 @@ export function Skills() {
           <div className="h-1 w-20 bg-purple-600"></div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-          {skills.map((skill) => {
-            return (
-              <div
-                key={skill.name}
-                className="flex flex-col items-center justify-center p-6 rounded-xl bg-zinc-50 dark:bg-zinc-950 backdrop-blur-sm border border-zinc-300/50 dark:border-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-900/30 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group"
-              >
-                <skill.icon className={`w-12 h-12 ${skill.color} mb-3 group-hover:scale-110 transition-transform duration-300`} />
-                <span className="text-base font-bold dark:text-white text-zinc-800">{skill.name}</span>
-              </div>
-            );
-          })}
+        <div className="relative">
+          <div 
+            className="absolute top-0 -right-24 w-96 h-96 opacity-0 dark:opacity-100 pointer-events-none"
+            style={{
+              background: 'radial-gradient(circle at 70% 30%, rgba(147, 51, 234, 0.25) 0%, rgba(139, 92, 246, 0.12) 40%, transparent 70%)',
+              filter: 'blur(40px)',
+            }}
+          ></div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 relative z-10">
+            {skills.map((skill) => {
+              return (
+                <div
+                  key={skill.name}
+                  className="flex flex-col items-center justify-center p-6 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 border border-zinc-300/50 dark:border-zinc-900 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group"
+                >
+                  <skill.icon className={`w-12 h-12 ${skill.color} mb-3 group-hover:scale-110 transition-transform duration-300`} />
+                  <span className="text-base font-bold dark:text-white text-zinc-800">{skill.name}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

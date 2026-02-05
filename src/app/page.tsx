@@ -2,6 +2,7 @@ import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
 import { Skills } from "@/components/skills";
 import { Experience } from "@/components/experience";
+import { Contact } from "@/components/contact";
 import { ParticlesWrapper } from "@/components/ui/particles-wrapper";
 
 export default function Home() {
@@ -22,10 +23,8 @@ export default function Home() {
             <Experience />
           </section>
           
-          <section id="cv" className="min-h-screen flex items-center justify-center">
-            <div className="max-w-3xl">
-              <h2 className="text-3xl font-bold text-black dark:text-zinc-50 mb-8">CV</h2>
-            </div>
+          <section id="contact" className="min-h-screen py-20">
+            <Contact />
           </section>
         </main>
       </div>
