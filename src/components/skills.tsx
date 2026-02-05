@@ -10,6 +10,7 @@ import {
   SiGit, 
   SiDocker 
 } from "react-icons/si";
+import { AnimatedTealGlow } from "@/components/ui/gradient-glow-animated";
 
 const skills = [
   { name: "React", icon: SiReact, color: "text-[#61DAFB]" },
@@ -27,18 +28,12 @@ export function Skills() {
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col gap-12">
         <div>
-          <h2 className="text-5xl font-bold dark:text-white text-zinc-700 mb-4">Tech stack</h2>
-          <div className="h-1 w-20 bg-purple-600"></div>
+          <h2 className="text-4xl font-bold dark:text-white text-zinc-700 mb-4">Tech stack</h2>
+          <div className="h-1 w-20 bg-teal-600"></div>
         </div>
 
-        <div className="relative">
-          <div 
-            className="absolute top-0 -right-24 w-96 h-96 opacity-0 dark:opacity-100 pointer-events-none"
-            style={{
-              background: 'radial-gradient(circle at 70% 30%, rgba(147, 51, 234, 0.25) 0%, rgba(139, 92, 246, 0.12) 40%, transparent 70%)',
-              filter: 'blur(40px)',
-            }}
-          ></div>
+        <div className="relative overflow-visible">
+          <AnimatedTealGlow className="absolute top-0 -right-48 w-96 h-96 opacity-30 dark:opacity-25" />
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 relative z-10">
             {skills.map((skill) => {
               return (

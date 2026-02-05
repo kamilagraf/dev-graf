@@ -3,14 +3,15 @@ import { Hero } from "@/components/hero";
 import { Skills } from "@/components/skills";
 import { Experience } from "@/components/experience";
 import { Contact } from "@/components/contact";
+import { Footer } from "@/components/footer";
 import { ParticlesWrapper } from "@/components/ui/particles-wrapper";
 
 export default function Home() {
   return (
     <ParticlesWrapper>
-      <div className="flex flex-col min-h-screen font-sans max-w-7xl mx-auto">
+      <div className="flex flex-col min-h-screen min-w-0 font-sans">
         <Nav />
-        <main className="w-full">
+        <main className="w-full max-w-7xl mx-auto">
           <section id="about" className="min-h-screen pb-20">
             <Hero />
           </section>
@@ -27,6 +28,7 @@ export default function Home() {
             <Contact />
           </section>
         </main>
+        <Footer />
       </div>
     </ParticlesWrapper>
   );

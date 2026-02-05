@@ -24,7 +24,7 @@ export function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 dark:text-white text-zinc-700">
-            Hey, I&apos;m <span className="text-purple-600">Kamila</span>!
+            Hey, I&apos;m <span className="text-teal-600">Kamila</span>!
           </h1>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 dark:text-white text-zinc-700">
@@ -38,19 +38,19 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <button
               onClick={() => scrollToSection("contact")}
-              className="group relative cursor-pointer overflow-hidden rounded-xl p-[2px] transition-all duration-300 hover:shadow-lg hover:shadow-blue-900/40 hover:-translate-y-0.5"
+              className="group relative cursor-pointer overflow-hidden rounded-xl p-[2px] transition-all duration-300 hover:shadow-[0_0_25px_rgba(20,184,166,0.4)] hover:-translate-y-0.5"
             >
               <span
-                className="absolute -inset-[2px] z-0 rounded-xl bg-[conic-gradient(from_0deg,#1e3a8a,#581c87,#1e3a8a)] opacity-100 group-hover:animate-[gradient-border-spin_3s_linear_infinite]"
+                className="absolute -inset-[2px] z-0 rounded-xl bg-[conic-gradient(from_0deg,#0f766e,#0d9488,#0f766e)] opacity-100 group-hover:animate-[gradient-border-spin_3s_linear_infinite]"
                 aria-hidden
               />
-              <span className="relative z-10 flex items-center rounded-[10px] bg-background/80 backdrop-blur-sm px-6 py-3 text-foreground font-semibold transition-all duration-300">
+              <span className="relative z-10 flex items-center gap-2 rounded-[10px] bg-teal-600 dark:bg-background px-6 py-3 text-white dark:text-teal-400 font-semibold transition-all duration-300 group-hover:bg-white group-hover:text-teal-600 dark:group-hover:bg-background dark:group-hover:text-teal-400">
                 Get In Touch
               </span>
             </button>
             <button
               onClick={() => scrollToSection("cv")}
-              className="px-6 py-3 rounded-md border border-purple-600 dark:border-zinc-700 text-purple-600 dark:text-white font-semibold hover:bg-purple-800 dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors cursor-pointer"
+              className="px-6 py-3 rounded-md border border-teal-600 dark:border-zinc-700 text-teal-600 dark:text-white font-semibold hover:bg-teal-800 dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors cursor-pointer"
             >
               View CV
             </button>
@@ -61,7 +61,7 @@ export function Hero() {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-white hover:border-purple-600 dark:hover:border-purple-600 hover:text-purple-600 dark:hover:text-purple-600 transition-colors"
+            className="w-10 h-10 rounded-full border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-white hover:border-teal-600 dark:hover:border-teal-600 hover:text-teal-600 dark:hover:text-teal-600 transition-colors"
             aria-label="GitHub"
           >
             <Github className="w-5 h-5" />
@@ -70,14 +70,14 @@ export function Hero() {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-white hover:border-purple-600 dark:hover:border-purple-600 hover:text-purple-600 dark:hover:text-purple-600 transition-colors"
+            className="w-10 h-10 rounded-full border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-white hover:border-teal-600 dark:hover:border-teal-600 hover:text-teal-600 dark:hover:text-teal-600 transition-colors"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-5 h-5" />
           </a>
           <a
             href="mailto:contact@example.com"
-            className="w-10 h-10 rounded-full border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-white hover:border-purple-600 dark:hover:border-purple-600 hover:text-purple-600 dark:hover:text-purple-600 transition-colors"
+            className="w-10 h-10 rounded-full border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-white hover:border-teal-600 dark:hover:border-teal-600 hover:text-teal-600 dark:hover:text-teal-600 transition-colors"
             aria-label="Email"
           >
             <Mail className="w-5 h-5" />
@@ -88,8 +88,8 @@ export function Hero() {
       
       <div className="flex flex-col gap-12">
         <div>
-          <h2 className="text-5xl font-bold dark:text-white text-zinc-700 mb-4">About me</h2>
-          <div className="h-1 w-20 bg-purple-600"></div>
+          <h2 className="text-4xl font-bold dark:text-white text-zinc-700 mb-4">About me</h2>
+          <div className="h-1 w-20 bg-teal-600"></div>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12">
@@ -103,44 +103,44 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="rounded-2xl p-8 flex-1 mt-16 shadow-[0_0_50px_rgba(147,51,234,0.15)] dark:shadow-[0_0_50px_rgba(147,51,234,0.15)]">
+          <div className="rounded-2xl p-8 flex-1 mt-16 shadow-[-10px_0_30px_rgba(20,184,166,0.1),10px_0_30px_rgba(0,41,107,0.1)] dark:shadow-[-10px_0_30px_rgba(20,184,166,0.16),10px_0_30px_rgba(0,41,107,0.16)]">
             <div className="flex flex-col gap-6">
               <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-600/20 flex items-center justify-center group-hover/item:bg-purple-200 dark:group-hover/item:bg-purple-600/30 transition-all duration-300 group-hover/item:scale-110">
-                  <Code className="w-6 h-6 text-purple-600 dark:text-purple-400 group-hover/item:text-purple-700 dark:group-hover/item:text-purple-300 transition-colors" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-600/20 flex items-center justify-center group-hover/item:bg-teal-200 dark:group-hover/item:bg-teal-600/30 transition-all duration-300 group-hover/item:scale-110">
+                  <Code className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/item:text-teal-700 dark:group-hover/item:text-teal-300 transition-colors" />
                 </div>
                 <div className="flex flex-col gap-1 flex-1">
-                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white group-hover/item:text-purple-600 dark:group-hover/item:text-purple-300 transition-colors">Clean Code</h3>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white group-hover/item:text-teal-600 dark:group-hover/item:text-teal-300 transition-colors">Clean Code</h3>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Writing maintainable and scalable solutions</p>
                 </div>
               </div>
 
               <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-600/20 flex items-center justify-center group-hover/item:bg-purple-200 dark:group-hover/item:bg-purple-600/30 transition-all duration-300 group-hover/item:scale-110">
-                  <Rocket className="w-6 h-6 text-purple-600 dark:text-purple-400 group-hover/item:text-purple-700 dark:group-hover/item:text-purple-300 transition-colors" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-600/20 flex items-center justify-center group-hover/item:bg-teal-200 dark:group-hover/item:bg-teal-600/30 transition-all duration-300 group-hover/item:scale-110">
+                  <Rocket className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/item:text-teal-700 dark:group-hover/item:text-teal-300 transition-colors" />
                 </div>
                 <div className="flex flex-col gap-1 flex-1">
-                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white group-hover/item:text-purple-600 dark:group-hover/item:text-purple-300 transition-colors">Fast Performance</h3>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white group-hover/item:text-teal-600 dark:group-hover/item:text-teal-300 transition-colors">Fast Performance</h3>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Optimized applications for best user experience</p>
                 </div>
               </div>
 
               <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-600/20 flex items-center justify-center group-hover/item:bg-purple-200 dark:group-hover/item:bg-purple-600/30 transition-all duration-300 group-hover/item:scale-110">
-                  <Shield className="w-6 h-6 text-purple-600 dark:text-purple-400 group-hover/item:text-purple-700 dark:group-hover/item:text-purple-300 transition-colors" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-600/20 flex items-center justify-center group-hover/item:bg-teal-200 dark:group-hover/item:bg-teal-600/30 transition-all duration-300 group-hover/item:scale-110">
+                  <Shield className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/item:text-teal-700 dark:group-hover/item:text-teal-300 transition-colors" />
                 </div>
                 <div className="flex flex-col gap-1 flex-1">
-                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white group-hover/item:text-purple-600 dark:group-hover/item:text-purple-300 transition-colors">Secure Systems</h3>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white group-hover/item:text-teal-600 dark:group-hover/item:text-teal-300 transition-colors">Secure Systems</h3>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Building with security best practices in mind</p>
                 </div>
               </div>
 
               <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/20 backdrop-blur-sm hover:bg-zinc-100 dark:hover:bg-zinc-900/30 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-600/20 flex items-center justify-center group-hover/item:bg-purple-200 dark:group-hover/item:bg-purple-600/30 transition-all duration-300 group-hover/item:scale-110">
-                  <Users className="w-6 h-6 text-purple-600 dark:text-purple-400 group-hover/item:text-purple-700 dark:group-hover/item:text-purple-300 transition-colors" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-600/20 flex items-center justify-center group-hover/item:bg-teal-200 dark:group-hover/item:bg-teal-600/30 transition-all duration-300 group-hover/item:scale-110">
+                  <Users className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/item:text-teal-700 dark:group-hover/item:text-teal-300 transition-colors" />
                 </div>
                 <div className="flex flex-col gap-1 flex-1">
-                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white group-hover/item:text-purple-600 dark:group-hover/item:text-purple-300 transition-colors">Team Player</h3>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white group-hover/item:text-teal-600 dark:group-hover/item:text-teal-300 transition-colors">Team Player</h3>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Collaborative approach to problem solving</p>
                 </div>
               </div>

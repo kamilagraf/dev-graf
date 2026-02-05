@@ -1,18 +1,34 @@
 export function GradientGlow() {
   return (
     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-      {/* Light theme glow */}
+      {/* Light theme */}
       <div 
         className="w-full max-w-2xl h-[450px] rounded-[50%] blur-3xl opacity-60 dark:hidden"
         style={{
-          background: 'radial-gradient(ellipse 100% 80% at 50% 50%, rgba(126, 34, 206, 0.25) 0%, rgba(147, 51, 234, 0.18) 20%, rgba(139, 92, 246, 0.12) 35%, rgba(147, 51, 234, 0.08) 50%, rgba(139, 92, 246, 0.04) 65%, transparent 80%)'
+          background:
+            'radial-gradient(ellipse 100% 80% at 50% 50%,' +
+            ' rgba(45, 212, 191, 0.2) 0%,' +     // teal-400
+            ' rgba(20, 184, 166, 0.14) 15%,' +  // teal-500
+            ' rgba(10, 132, 162, 0.12) 32%,' +  // teal + #00509D mix
+            ' rgba(0, 80, 157, 0.1) 48%,' +     // #00509D
+            ' rgba(0, 63, 136, 0.08) 65%,' +    // #003F88
+            ' rgba(0, 41, 107, 0.06) 82%,' +     // #00296B
+            ' transparent 95%)'
         }}
       ></div>
-      {/* Dark theme glow */}
+      {/* Dark theme */}
       <div 
         className="hidden dark:block w-full max-w-2xl h-[450px] rounded-[50%] blur-3xl opacity-75"
         style={{
-          background: 'radial-gradient(ellipse 100% 80% at 50% 50%, rgba(126, 34, 206, 0.4) 0%, rgba(147, 51, 234, 0.3) 20%, rgba(139, 92, 246, 0.2) 35%, rgba(147, 51, 234, 0.15) 50%, rgba(139, 92, 246, 0.08) 65%, transparent 80%)'
+          background:
+            'radial-gradient(ellipse 100% 80% at 50% 50%,' +
+            ' rgba(45, 212, 191, 0.32) 0%,' +   // teal-400
+            ' rgba(20, 184, 166, 0.24) 15%,' +  // teal-500
+            ' rgba(10, 132, 162, 0.2) 32%,' +   // teal + #00509D mix
+            ' rgba(0, 80, 157, 0.16) 48%,' +    // #00509D
+            ' rgba(0, 63, 136, 0.12) 65%,' +     // #003F88
+            ' rgba(0, 41, 107, 0.09) 82%,' +     // #00296B
+            ' transparent 95%)'
         }}
       ></div>
     </div>

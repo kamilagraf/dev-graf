@@ -24,31 +24,28 @@ export function Experience() {
     <div className="max-w-7xl mx-auto px-8 py-20">
       <div className="flex flex-col gap-12">
         <div>
-          <h2 className="text-5xl font-bold dark:text-white text-zinc-700 mb-4">Experience</h2>
-          <div className="h-1 w-20 bg-purple-600"></div>
+          <h2 className="text-4xl font-bold dark:text-white text-zinc-700 mb-4">Experience</h2>
+          <div className="h-1 w-20 bg-teal-600"></div>
         </div>
 
         <div className="relative">
           <div className="absolute left-4 top-0 bottom-0 w-0.5">
-            <div className="h-full bg-gradient-to-b from-purple-600/20 via-purple-500/40 to-purple-600/20 dark:from-purple-600/30 dark:via-purple-500/50 dark:to-purple-600/30"></div>
+            <div className="h-full bg-gradient-to-b from-teal-600/20 via-teal-500/40 to-teal-600/20 dark:from-teal-600/30 dark:via-teal-500/50 dark:to-teal-600/30"></div>
           </div>
           
           <div className="absolute left-4 top-0 bottom-0 w-1 blur-sm opacity-30">
-            <div className="h-full bg-gradient-to-b from-purple-600 via-purple-500 to-purple-600"></div>
+            <div className="h-full bg-gradient-to-b from-teal-600 via-teal-500 to-teal-600"></div>
           </div>
 
           <div className="flex flex-col gap-8 pl-16">
             {experiences.map((exp, index) => (
               <div key={index} className="relative">
-                <div 
-                  className="absolute left-0 top-5 z-10 w-4 flex items-center justify-center" 
-                  style={{ 
-                    transform: 'translateX(calc(-4.2rem + 1rem + 0.25rem - 50%))'
-                  }}
+                <div
+                  className="absolute left-0 top-5 z-10 w-4 flex items-center justify-center -translate-x-[calc(2.95rem+50%)]"
                 >
-                  <div className="absolute w-6 h-6 rounded-full bg-purple-600/30 dark:bg-purple-500/40 blur-md animate-pulse"></div>
-                  <div className="absolute w-5 h-5 rounded-full bg-purple-600/20 dark:bg-purple-500/30"></div>
-                  <div className="relative w-4 h-4 rounded-full bg-purple-600 dark:bg-purple-400 border-2 border-zinc-50 dark:border-zinc-900 shadow-lg shadow-purple-600/50 dark:shadow-purple-500/50"></div>
+                  <div className="absolute w-6 h-6 rounded-full bg-teal-600/30 dark:bg-teal-500/40 blur-md animate-pulse"></div>
+                  <div className="absolute w-5 h-5 rounded-full bg-teal-600/20 dark:bg-teal-500/30"></div>
+                  <div className="relative w-4 h-4 rounded-full bg-teal-600 dark:bg-teal-400 border-2 border-zinc-50 dark:border-zinc-900 shadow-lg shadow-teal-600/50 dark:shadow-teal-500/50"></div>
                 </div>
 
                 <div className="flex-1 relative">
@@ -62,7 +59,7 @@ export function Experience() {
                     </h3>
 
                     <div className="flex flex-wrap items-center gap-2 mb-3 text-base font-normal text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-800 dark:group-hover:text-zinc-300 transition-colors">
-                      {exp.company && <span className="text-purple-600 dark:text-purple-400">{exp.company}</span>}
+                      {exp.company && <span className="text-teal-600 dark:text-teal-400">{exp.company}</span>}
                     </div>
 
                     {Array.isArray(exp.description) ? (
