@@ -58,7 +58,7 @@ export function Hero() {
 
           <div className="flex gap-6">
           <a
-            href="https://github.com"
+            href="https://github.com/kamilagraf"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-white hover:border-teal-600 dark:hover:border-teal-600 hover:text-teal-600 dark:hover:text-teal-600 transition-colors"
@@ -67,7 +67,7 @@ export function Hero() {
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/kamilagraf/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-white hover:border-teal-600 dark:hover:border-teal-600 hover:text-teal-600 dark:hover:text-teal-600 transition-colors"
@@ -76,7 +76,7 @@ export function Hero() {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:kam.graf0@gmail.com"
             className="w-10 h-10 rounded-full border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-zinc-700 dark:text-white hover:border-teal-600 dark:hover:border-teal-600 hover:text-teal-600 dark:hover:text-teal-600 transition-colors"
             aria-label="Email"
           >
