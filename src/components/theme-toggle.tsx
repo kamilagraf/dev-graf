@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Classic } from "@theme-toggles/react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export function ThemeToggle() {
@@ -12,24 +12,29 @@ export function ThemeToggle() {
     setMounted(true);
   }, []);
 
-  const handleToggle = (toggled: boolean) => {
-    setTheme(toggled ? "dark" : "light");
-  };
-
   if (!mounted) {
-    return <div className="size-12" aria-label="Toggle theme" />;
+    return (
+      <div
+        className="size-12 flex items-center justify-center rounded-md text-zinc-500"
+        aria-hidden
+      />
+    );
   }
 
+  const isDark = resolvedTheme === "dark";
+
   return (
-    <Classic
-      duration={750}
-      toggled={resolvedTheme === "dark"}
-      onToggle={handleToggle}
-      forceMotion
-      className="theme-toggle size-12 text-[1.75rem] text-zinc-500 dark:text-white hover:text-zinc-500 dark:hover:text-white [--theme-toggle__classic--duration:750ms]"
+    <button
+      type="button"
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      className="size-12 flex cursor-pointer items-center justify-center rounded-md text-zinc-500 transition-colors hover:text-zinc-700 dark:text-white dark:hover:text-zinc-200"
       aria-label="Toggle theme"
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      {...({} as any)}
-    />
+    >
+      {isDark ? (
+        <Moon className="size-5 transition-transform duration-300" />
+      ) : (
+        <Sun className="size-5 transition-transform duration-300" />
+      )}
+    </button>
   );
 }
