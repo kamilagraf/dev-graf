@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail, Code, Rocket, Shield, Users } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Rocket, Figma, Users } from "lucide-react";
 import { GradientGlow } from "@/components/ui/gradient-glow";
 
 export function Hero() {
@@ -127,11 +127,11 @@ export function Hero() {
 
               <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-600/20 flex items-center justify-center group-hover/item:bg-teal-200 dark:group-hover/item:bg-teal-600/30 transition-all duration-300 group-hover/item:scale-110">
-                  <Shield className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/item:text-teal-700 dark:group-hover/item:text-teal-300 transition-colors" />
+                  <Figma className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/item:text-teal-700 dark:group-hover/item:text-teal-300 transition-colors" />
                 </div>
                 <div className="flex flex-col gap-1 flex-1">
-                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white group-hover/item:text-teal-600 dark:group-hover/item:text-teal-300 transition-colors">Secure Systems</h3>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Building with security best practices in mind</p>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white group-hover/item:text-teal-600 dark:group-hover/item:text-teal-300 transition-colors">Pixel-Perfect Implementation</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">Bringing Figma concepts to life as flawless, production-ready interfaces.</p>
                 </div>
               </div>
 

@@ -107,16 +107,7 @@ export function Contact() {
               required
             />
 
-            <div className="flex items-center justify-end gap-4">
-              {status === "error" && (
-                <p className="text-sm text-red-500">{errorMessage}</p>
-              )}
-              {status === "success" && (
-                <p className="text-sm text-teal-500 animate-fade-in">
-                  Thanks for reaching out! I&apos;ll get back to you soon.
-                </p>
-              )}
-
+            <div className="flex justify-end">
               <button
                 type="submit"
                 disabled={status === "sending"}
@@ -132,6 +123,19 @@ export function Contact() {
                 </span>
               </button>
             </div>
+
+            <div className="flex justify-end relative h-20 overflow-visible">
+              <AnimatedTealGlow className="absolute top-10 -right-40 z-0 w-44 h-20 opacity-50 dark:opacity-30" />
+            </div>
+
+            {status === "error" && (
+              <p className="text-sm text-red-500 text-right">{errorMessage}</p>
+            )}
+            {status === "success" && (
+              <p className="text-sm text-teal-500 text-right animate-fade-in">
+                Thanks for reaching out! I&apos;ll get back to you soon.
+              </p>
+            )}
           </form>
         </div>
       </div>
