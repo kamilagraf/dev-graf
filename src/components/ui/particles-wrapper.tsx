@@ -24,7 +24,7 @@ export function ParticlesWrapper({ children }: { children: React.ReactNode }) {
         color={color}
         refresh
       />
-      <div className="relative z-10">
+      <div className="relative z-10 min-h-full flex flex-col">
         {children}
       </div>
     </div>

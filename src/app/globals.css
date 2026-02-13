@@ -145,6 +145,25 @@
   }
 }
 
+.animate-glow-drift {
+  animation: none;
+}
+@media (min-width: 1024px) {
+  .animate-glow-drift {
+    animation: glow-drift 18s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  }
+}
+
+html.scroll-locked,
+html.scroll-locked body {
+  overflow: hidden;
+}
+html.scroll-locked body {
+  position: fixed;
+  top: var(--scroll-lock-top, 0);
+  width: 100%;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

@@ -86,7 +86,7 @@ export function Hero() {
         </div>
       </div>
       
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-12 px-6 md:px-8">
         <div>
           <h2 className="text-4xl font-bold dark:text-white text-zinc-700 mb-4">About me</h2>
           <div className="h-1 w-20 bg-teal-600"></div>

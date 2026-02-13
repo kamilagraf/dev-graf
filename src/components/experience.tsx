@@ -21,7 +21,7 @@ const experiences = [
 
 export function Experience() {
   return (
-    <div className="max-w-7xl mx-auto px-8 py-20">
+    <div className="max-w-7xl mx-auto px-6 md:px-8 py-20">
       <div className="flex flex-col gap-12">
         <div>
           <h2 className="text-4xl font-bold dark:text-white text-zinc-700 mb-4">Experience</h2>

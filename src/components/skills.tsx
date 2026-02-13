@@ -25,14 +25,14 @@ const skills = [
 
 export function Skills() {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto px-6 md:px-8">
       <div className="flex flex-col gap-12">
         <div>
           <h2 className="text-4xl font-bold dark:text-white text-zinc-700 mb-4">Tech stack</h2>
           <div className="h-1 w-20 bg-teal-600"></div>
         </div>
 
-        <div className="relative overflow-visible">
+        <div className="relative overflow-hidden lg:overflow-visible">
           <AnimatedTealGlow className="absolute top-0 -right-48 w-96 h-96 opacity-30 dark:opacity-25" />
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 relative z-10">
             {skills.map((skill) => {

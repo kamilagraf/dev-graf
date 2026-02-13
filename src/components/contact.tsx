@@ -57,8 +57,10 @@ export function Contact() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-8 relative overflow-visible">
-      <AnimatedTealGlow className="absolute top-[-10%] left-[12%] w-[min(80vw,420px)] h-[min(70vw,380px)] opacity-45 dark:opacity-25" />
+    <div className="max-w-7xl mx-auto px-6 md:px-8 relative overflow-hidden lg:overflow-visible">
+      <AnimatedTealGlow
+        className="pointer-events-none absolute left-1/2 top-10 w-[min(110vw,440px)] h-[min(90vw,400px)] -translate-x-1/2 opacity-45 dark:opacity-25 lg:top-[-10%] lg:left-[12%] lg:translate-x-0 lg:w-[min(80vw,420px)] lg:h-[min(70vw,380px)]"
+      />
 
       <div className="flex flex-col gap-16">
         <div className="text-center">
@@ -107,7 +109,7 @@ export function Contact() {
               required
             />
 
-            <div className="flex justify-end">
+            <div className="flex justify-center md:justify-end">
               <button
                 type="submit"
                 disabled={status === "sending"}
@@ -124,15 +126,17 @@ export function Contact() {
               </button>
             </div>
 
-            <div className="flex justify-end relative h-20 overflow-visible">
-              <AnimatedTealGlow className="absolute top-10 -right-40 z-0 w-44 h-20 opacity-50 dark:opacity-30" />
+            <div className="hidden lg:flex justify-end relative h-20 overflow-visible">
+              <AnimatedTealGlow
+                className="pointer-events-none absolute top-10 -right-40 z-0 w-44 h-20 opacity-50 dark:opacity-30"
+              />
             </div>
 
             {status === "error" && (
-              <p className="text-sm text-red-500 text-right">{errorMessage}</p>
+                <p className="text-sm text-red-500 text-center md:text-right">{errorMessage}</p>
             )}
             {status === "success" && (
-              <p className="text-sm text-teal-500 text-right animate-fade-in">
+              <p className="text-sm text-teal-500 text-center md:text-right animate-fade-in">
                 Thanks for reaching out! I&apos;ll get back to you soon.
               </p>
             )}

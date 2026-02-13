@@ -9,9 +9,9 @@ import { ParticlesWrapper } from "@/components/ui/particles-wrapper";
 export default function Home() {
   return (
     <ParticlesWrapper>
-      <div className="flex flex-col min-h-screen min-w-0 font-sans">
+      <div className="flex flex-col min-h-screen min-w-0 font-sans pt-14 md:pt-0">
         <Nav />
-        <main className="w-full max-w-7xl mx-auto">
+        <main className="w-full max-w-7xl mx-auto flex-1">
           <section id="about" className="min-h-screen pb-20">
             <Hero />
           </section>
@@ -24,7 +24,7 @@ export default function Home() {
             <Experience />
           </section>
           
-          <section id="contact" className="min-h-screen py-20">
+          <section id="contact" className="min-h-screen py-20 pb-24 md:pb-20">
             <Contact />
           </section>
         </main>
