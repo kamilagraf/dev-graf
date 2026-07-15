@@ -109,7 +109,10 @@ export function Contact() {
               required
             />
 
-            <div className="flex justify-center md:justify-end">
+            <div className="relative flex flex-col items-center gap-2 md:items-end">
+              <AnimatedTealGlow
+                className="pointer-events-none absolute top-10 -right-40 z-0 hidden h-20 w-44 opacity-50 dark:opacity-30 lg:block"
+              />
               <button
                 type="submit"
                 disabled={status === "sending"}
@@ -124,22 +127,15 @@ export function Contact() {
                   {status === "sending" ? "Sending..." : "Send Message"}
                 </span>
               </button>
-            </div>
-
-            <div className="hidden lg:flex justify-end relative h-20 overflow-visible">
-              <AnimatedTealGlow
-                className="pointer-events-none absolute top-10 -right-40 z-0 w-44 h-20 opacity-50 dark:opacity-30"
-              />
-            </div>
-
-            {status === "error" && (
+              {status === "error" && (
                 <p className="text-sm text-red-500 text-center md:text-right">{errorMessage}</p>
-            )}
-            {status === "success" && (
-              <p className="text-sm text-teal-500 text-center md:text-right animate-fade-in">
-                Thanks for reaching out! I&apos;ll get back to you soon.
-              </p>
-            )}
+              )}
+              {status === "success" && (
+                <p className="text-sm text-teal-500 text-center md:text-right animate-fade-in">
+                  Thanks for reaching out! I&apos;ll get back to you soon.
+                </p>
+              )}
+            </div>
           </form>
         </div>
       </div>

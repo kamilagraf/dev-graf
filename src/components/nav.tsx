@@ -3,6 +3,7 @@
 import { Briefcase, Mail, Menu, Sparkles, User, X } from "lucide-react";
 import { useRef, useState } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { usePanelDrag } from "@/hooks/use-panel-drag";
 import { useScrollLock } from "@/hooks/use-scroll-lock";
 
 const NAV_LINKS = [
@@ -12,8 +13,6 @@ const NAV_LINKS = [
   { id: "contact", label: "Contact", icon: Mail },
 ] as const;
 
-const SWIPE_DOWN_THRESHOLD = 50;
-
 function scrollToSection(id: string) {
   const el = document.getElementById(id);
   if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -21,30 +20,16 @@ function scrollToSection(id: string) {
 
 export function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const touchStartY = useRef<number | null>(null);
-
-  useScrollLock(mobileOpen);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   const closeMenu = () => setMobileOpen(false);
+  const { dragProps, style: panelDragStyle } = usePanelDrag(panelRef, closeMenu);
+
+  useScrollLock(mobileOpen);
 
   const handleNavClick = (id: string) => {
     scrollToSection(id);
     closeMenu();
-  };
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartY.current = e.touches[0].clientY;
-  };
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (touchStartY.current === null) return;
-    const dy = e.touches[0].clientY - touchStartY.current;
-    if (dy > SWIPE_DOWN_THRESHOLD) {
-      closeMenu();
-      touchStartY.current = null;
-    }
-  };
-  const handleTouchEnd = () => {
-    touchStartY.current = null;
   };
 
   return (
@@ -94,13 +79,8 @@ export function Nav() {
             onClick={closeMenu}
             aria-label="Close menu"
           />
-          <div
-            className="absolute top-0 left-0 right-0 w-full max-w-[100vw] rounded-b-xl bg-background/95 backdrop-blur-sm overflow-hidden animate-in fade-in slide-in-from-top-4 duration-200 touch-pan-y"
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-          >
-            <div className="flex items-center justify-between px-6 py-4">
+          <div className="absolute top-0 left-0 right-0 w-full max-w-[100vw] rounded-b-xl bg-background/95 backdrop-blur-sm flex flex-col animate-in fade-in slide-in-from-top-4 duration-200 overflow-hidden">
+            <div className="flex items-center justify-between px-6 py-4 shrink-0">
               <span className="text-xl font-bold text-teal-600">K.</span>
               <button
                 type="button"
@@ -111,26 +91,36 @@ export function Nav() {
                 <X className="w-6 h-6" />
               </button>
             </div>
-            <div className="flex flex-col gap-4 px-8 pt-0 pb-10">
-              {NAV_LINKS.map(({ id, label, icon: Icon }) => (
-                <button
-                  key={id}
-                  onClick={() => handleNavClick(id)}
-                  className="flex items-center gap-3 text-left py-3 px-2 text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-teal-500 dark:hover:text-teal-500 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 rounded-lg transition-colors"
-                >
-                  <Icon className="w-5 h-5 shrink-0 text-teal-600 dark:text-teal-400" />
-                  {label}
-                </button>
-              ))}
-              <button
-                onClick={() => handleNavClick("cv")}
-                className="w-full py-3 px-4 text-sm font-semibold text-center text-teal-600 dark:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 rounded-lg transition-colors border border-teal-600/50"
-              >
-                CV
-              </button>
-            </div>
-            <div className="flex justify-center pb-4 pt-2" aria-hidden>
-              <div className="h-1 w-12 rounded-full bg-zinc-300 dark:bg-zinc-600" />
+            <div
+              ref={panelRef}
+              className="flex flex-col touch-none overflow-hidden"
+              style={panelDragStyle}
+              {...dragProps}
+            >
+              <div className="min-h-0 flex-1" aria-hidden />
+              <div className="mt-auto flex flex-col shrink-0">
+                <div className="flex flex-col gap-4 px-8">
+                  {NAV_LINKS.map(({ id, label, icon: Icon }) => (
+                    <button
+                      key={id}
+                      onClick={() => handleNavClick(id)}
+                      className="flex items-center gap-3 text-left py-3 px-2 text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-teal-500 dark:hover:text-teal-500 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 rounded-lg transition-colors shrink-0"
+                    >
+                      <Icon className="w-5 h-5 shrink-0 text-teal-600 dark:text-teal-400" />
+                      {label}
+                    </button>
+                  ))}
+                  <button
+                    onClick={() => handleNavClick("cv")}
+                    className="w-full py-3 px-4 text-sm font-semibold text-center text-teal-600 dark:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 rounded-lg transition-colors border border-teal-600/50 shrink-0"
+                  >
+                    CV
+                  </button>
+                </div>
+                <div className="flex justify-center pb-5 pt-3" aria-hidden>
+                  <div className="h-1 w-12 rounded-full bg-zinc-300 dark:bg-zinc-600" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

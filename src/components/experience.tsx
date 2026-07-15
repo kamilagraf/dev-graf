@@ -4,8 +4,12 @@ const experiences = [
   {
     title: "Software Engineer",
     company: "Curiosum",
-    period: "2022 - 2025",
-    description: "description..",
+    period: "2022 – 2025",
+    description: [
+      "Built full-stack features on React and Elixir/Phoenix apps — e-learning, healthcare, AI/LLM projects, and more across varied industries.",
+      "Worked in international, multicultural Scrum teams with UX/UI and QA — clear communication in English, flexible delivery, and strong self-organization.",
+      "Integrated LLM-powered functionality and used AI tools (Claude, Cursor) day to day alongside PostgreSQL and modern frontends.",
+    ],
   },
   {
     title: "Freelance Developer",
@@ -15,6 +19,7 @@ const experiences = [
       "Launched React SWM Icon Pack package on npm.",
       "Published SWM Icon Pack Figma Plugin on Figma Community.",
       "Built SWM Icon Browser website to browse SWM icons.",
+      "Serving as lead frontend developer for early-stage startup MVP, responsible for translating product vision into functional user interfaces.",
     ],
   },
 ];
