@@ -48,12 +48,22 @@ export function Hero() {
                 Get In Touch
               </span>
             </button>
-            <button
-              onClick={() => scrollToSection("cv")}
-              className="px-6 py-3 rounded-md border border-teal-600 dark:border-zinc-700 text-teal-600 dark:text-white font-semibold hover:bg-teal-800 dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors cursor-pointer"
+            <a
+              href="/cv-light.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-md border border-teal-600 dark:border-zinc-700 text-teal-600 dark:text-white font-semibold hover:bg-teal-800 dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors cursor-pointer dark:hidden"
             >
               View CV
-            </button>
+            </a>
+            <a
+              href="/cv-dark.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden px-6 py-3 rounded-md border border-teal-600 dark:border-zinc-700 text-teal-600 dark:text-white font-semibold hover:bg-teal-800 dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors cursor-pointer dark:inline-block"
+            >
+              View CV
+            </a>
           </div>
 
           <div className="flex gap-6">

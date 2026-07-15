@@ -48,12 +48,22 @@ export function Nav() {
                 {label}
               </button>
             ))}
-            <button
-              onClick={() => handleNavClick("cv")}
-              className="text-sm px-4 py-1 rounded-md border border-teal-600 text-teal-600 hover:bg-teal-800 hover:border-teal-800 hover:text-zinc-100 transition-colors cursor-pointer font-semibold"
+            <a
+              href="/cv-light.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm px-4 py-1 rounded-md border border-teal-600 text-teal-600 hover:bg-teal-800 hover:border-teal-800 hover:text-zinc-100 transition-colors cursor-pointer font-semibold dark:hidden"
             >
               CV
-            </button>
+            </a>
+            <a
+              href="/cv-dark.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden text-sm px-4 py-1 rounded-md border border-teal-600 text-teal-600 hover:bg-teal-800 hover:border-teal-800 hover:text-zinc-100 transition-colors cursor-pointer font-semibold dark:inline-block"
+            >
+              CV
+            </a>
             <ThemeToggle />
           </div>
 
@@ -110,12 +120,24 @@ export function Nav() {
                       {label}
                     </button>
                   ))}
-                  <button
-                    onClick={() => handleNavClick("cv")}
-                    className="w-full py-3 px-4 text-sm font-semibold text-center text-teal-600 dark:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 rounded-lg transition-colors border border-teal-600/50 shrink-0"
+                  <a
+                    href="/cv-light.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMenu}
+                    className="w-full py-3 px-4 text-sm font-semibold text-center text-teal-600 dark:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 rounded-lg transition-colors border border-teal-600/50 shrink-0 dark:hidden"
                   >
                     CV
-                  </button>
+                  </a>
+                  <a
+                    href="/cv-dark.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMenu}
+                    className="hidden w-full py-3 px-4 text-sm font-semibold text-center text-teal-600 dark:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-900/20 rounded-lg transition-colors border border-teal-600/50 shrink-0 dark:block"
+                  >
+                    CV
+                  </a>
                 </div>
                 <div className="flex justify-center pb-5 pt-3" aria-hidden>
                   <div className="h-1 w-12 rounded-full bg-zinc-300 dark:bg-zinc-600" />
