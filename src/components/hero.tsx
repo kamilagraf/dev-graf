@@ -23,11 +23,11 @@ export function Hero() {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 dark:text-white text-zinc-700">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold mb-4 dark:text-white text-zinc-700">
             Hey, I&apos;m <span className="text-teal-600">Kamila</span>!
           </h1>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 dark:text-white text-zinc-700">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 dark:text-white text-zinc-700">
             Fullstack Developer
           </h2>
 
@@ -97,9 +97,9 @@ export function Hero() {
       </div>
       
       <div className="flex flex-col gap-12 px-6 md:px-8">
-        <div>
-          <h2 className="text-4xl font-bold dark:text-white text-zinc-700 mb-4">About me</h2>
-          <div className="h-1 w-20 bg-teal-600"></div>
+        <div className="group w-fit">
+          <h2 className="text-3xl font-medium dark:text-teal-400 text-zinc-700 mb-4 uppercase"> 01 / About me</h2>
+          <div className="h-1 w-20 origin-left scale-x-0 bg-teal-600 transition-transform duration-300 group-hover:scale-x-100"></div>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12">

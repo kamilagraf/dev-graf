@@ -64,7 +64,7 @@ export function Contact() {
 
       <div className="flex flex-col gap-16">
         <div className="text-center">
-          <h2 className="text-5xl font-bold mb-4 dark:text-white text-zinc-700">
+          <h2 className="text-5xl font-semibold mb-4 dark:text-white text-zinc-700">
             Let&apos;s Work Together
           </h2>
           <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">

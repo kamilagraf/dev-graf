@@ -27,9 +27,9 @@ export function Skills() {
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-8">
       <div className="flex flex-col gap-12">
-        <div>
-          <h2 className="text-4xl font-bold dark:text-white text-zinc-700 mb-4">Tech stack</h2>
-          <div className="h-1 w-20 bg-teal-600"></div>
+        <div className="group w-fit">
+          <h2 className="text-3xl font-medium dark:text-teal-400 text-zinc-700 mb-4 uppercase">02 / Tech stack</h2>
+          <div className="h-1 w-20 origin-left scale-x-0 bg-teal-600 transition-transform duration-300 group-hover:scale-x-100"></div>
         </div>
 
         <div className="relative overflow-hidden lg:overflow-visible">

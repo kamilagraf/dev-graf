@@ -36,7 +36,7 @@ export function Nav() {
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-background/95 backdrop-blur-sm md:sticky md:bg-background/80">
         <div className="flex items-center justify-between gap-4 py-4 max-w-7xl mx-auto px-6 md:px-8">
-          <span className="text-2xl font-bold text-teal-600">K.</span>
+          <span className="text-2xl font-bold text-teal-600">GRAF.</span>
 
           <div className="hidden md:flex items-center gap-6">
             {NAV_LINKS.map(({ id, label }) => (
