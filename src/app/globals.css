@@ -172,3 +172,12 @@ html.scroll-locked body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide native cursor wherever SmoothCursor is active (desktop / trackpad) */
+@media (any-hover: hover) and (any-pointer: fine) {
+  *,
+  *::before,
+  *::after {
+    cursor: none !important;
+  }
+}
