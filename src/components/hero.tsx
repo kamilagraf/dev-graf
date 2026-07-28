@@ -119,7 +119,7 @@ export function Hero() {
 
           <div className="rounded-2xl p-8 flex-1 mt-16 shadow-[-10px_0_30px_rgba(20,184,166,0.1),10px_0_30px_rgba(0,41,107,0.1)] dark:shadow-[-10px_0_30px_rgba(20,184,166,0.16),10px_0_30px_rgba(0,41,107,0.16)]">
             <div className="flex flex-col gap-6">
-              <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
+              <div className="flex gap-4 p-4 rounded-xl bg-zinc-900/5 dark:bg-zinc-800/10 hover:bg-zinc-900/10 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-600/20 flex items-center justify-center group-hover/item:bg-teal-200 dark:group-hover/item:bg-teal-600/30 transition-all duration-300 group-hover/item:scale-110">
                   <Code className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/item:text-teal-700 dark:group-hover/item:text-teal-300 transition-colors" />
                 </div>
@@ -129,7 +129,7 @@ export function Hero() {
                 </div>
               </div>
 
-              <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
+              <div className="flex gap-4 p-4 rounded-xl bg-zinc-900/5 dark:bg-zinc-800/10 hover:bg-zinc-900/10 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-600/20 flex items-center justify-center group-hover/item:bg-teal-200 dark:group-hover/item:bg-teal-600/30 transition-all duration-300 group-hover/item:scale-110">
                   <Rocket className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/item:text-teal-700 dark:group-hover/item:text-teal-300 transition-colors" />
                 </div>
@@ -139,7 +139,7 @@ export function Hero() {
                 </div>
               </div>
 
-              <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
+              <div className="flex gap-4 p-4 rounded-xl bg-zinc-900/5 dark:bg-zinc-800/10 hover:bg-zinc-900/10 dark:hover:bg-zinc-800/20 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-600/20 flex items-center justify-center group-hover/item:bg-teal-200 dark:group-hover/item:bg-teal-600/30 transition-all duration-300 group-hover/item:scale-110">
                   <Figma className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/item:text-teal-700 dark:group-hover/item:text-teal-300 transition-colors" />
                 </div>
@@ -149,7 +149,7 @@ export function Hero() {
                 </div>
               </div>
 
-              <div className="flex gap-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/20 backdrop-blur-sm hover:bg-zinc-100 dark:hover:bg-zinc-900/30 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
+              <div className="flex gap-4 p-4 rounded-xl bg-zinc-900/5 dark:bg-zinc-800/20 backdrop-blur-sm hover:bg-zinc-900/10 dark:hover:bg-zinc-900/30 border border-zinc-300/50 dark:border-zinc-900 hover:border-zinc-400/70 dark:hover:border-zinc-600 transition-colors duration-300 cursor-pointer group/item">
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-600/20 flex items-center justify-center group-hover/item:bg-teal-200 dark:group-hover/item:bg-teal-600/30 transition-all duration-300 group-hover/item:scale-110">
                   <Users className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover/item:text-teal-700 dark:group-hover/item:text-teal-300 transition-colors" />
                 </div>

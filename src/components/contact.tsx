@@ -85,7 +85,7 @@ export function Contact() {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 border border-zinc-300/50 dark:border-zinc-900 text-zinc-800 dark:text-zinc-300 placeholder-zinc-500 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-teal-600/50 focus:border-teal-600/50 transition-colors"
+              className="w-full px-4 py-3 rounded-xl bg-zinc-900/5 dark:bg-zinc-800/10 border border-zinc-300/50 dark:border-zinc-900 text-zinc-800 dark:text-zinc-300 placeholder-zinc-500 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-teal-600/50 focus:border-teal-600/50 transition-colors"
               required
             />
 
@@ -95,7 +95,7 @@ export function Contact() {
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 border border-zinc-300/50 dark:border-zinc-900 text-zinc-800 dark:text-zinc-300 placeholder-zinc-500 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-teal-600/50 focus:border-teal-600/50 transition-colors"
+              className="w-full px-4 py-3 rounded-xl bg-zinc-900/5 dark:bg-zinc-800/10 border border-zinc-300/50 dark:border-zinc-900 text-zinc-800 dark:text-zinc-300 placeholder-zinc-500 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-teal-600/50 focus:border-teal-600/50 transition-colors"
               required
             />
 
@@ -105,7 +105,7 @@ export function Contact() {
               value={formData.message}
               onChange={handleChange}
               rows={6}
-              className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/10 border border-zinc-300/50 dark:border-zinc-900 text-zinc-800 dark:text-zinc-300 placeholder-zinc-500 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-teal-600/50 focus:border-teal-600/50 transition-colors resize-none"
+              className="w-full px-4 py-3 rounded-xl bg-zinc-900/5 dark:bg-zinc-800/10 border border-zinc-300/50 dark:border-zinc-900 text-zinc-800 dark:text-zinc-300 placeholder-zinc-500 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-teal-600/50 focus:border-teal-600/50 transition-colors resize-none"
               required
             />
 

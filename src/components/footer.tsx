@@ -11,7 +11,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t border-zinc-200 dark:border-zinc-800/80 bg-transparent dark:bg-zinc-950/80 mt-auto">
+    <footer className="w-full border-t border-zinc-200/60 dark:border-zinc-800/50 bg-transparent dark:bg-transparent mt-auto">
       <div className="max-w-7xl mx-auto px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-zinc-600 dark:text-zinc-400">
           © {year} Graf. All rights reserved.
