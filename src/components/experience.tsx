@@ -29,7 +29,7 @@ export function Experience() {
     <div className="max-w-7xl mx-auto px-6 md:px-8 py-20">
       <div className="flex flex-col gap-12">
         <div className="group w-fit">
-          <h2 className="text-3xl font-medium dark:text-teal-400 text-zinc-700 mb-4 uppercase">03 / Experience</h2>
+          <h2 className="text-3xl font-medium dark:text-teal-400 text-zinc-700 mb-4 uppercase">04 / Experience</h2>
           <div className="h-1 w-20 origin-left scale-x-0 bg-teal-600 transition-transform duration-300 group-hover:scale-x-100"></div>
         </div>
 

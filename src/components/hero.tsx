@@ -109,7 +109,11 @@ export function Hero() {
               I&apos;m a fullstack developer with a passion for building robust and scalable web applications. My journey in software development has equipped me with a diverse skill set spanning both frontend and backend technologies. 
               </p>
               <p>
-              When I&apos;m not coding, I&apos;m constantly learning new technologies and staying up-to-date with the latest industry trends to deliver cutting-edge solutions.              </p>
+              When I&apos;m not coding, I&apos;m constantly learning new technologies and staying up-to-date with the latest industry trends to deliver cutting-edge solutions.
+              </p>
+              <p>
+              I&apos;m also a no-code enthusiast, currently exploring Webflow and Framer to bring ideas to life faster and with more creative freedom.
+              </p>
             </div>
           </div>
 

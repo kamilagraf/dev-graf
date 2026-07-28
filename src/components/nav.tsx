@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, Mail, Menu, Sparkles, User, X } from "lucide-react";
+import { Briefcase, Mail, Menu, Sparkles, Hammer, User, X } from "lucide-react";
 import { useRef, useState } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { usePanelDrag } from "@/hooks/use-panel-drag";
@@ -9,6 +9,7 @@ import { useScrollLock } from "@/hooks/use-scroll-lock";
 const NAV_LINKS = [
   { id: "about", label: "About", icon: User },
   { id: "skills", label: "Skills", icon: Sparkles },
+  { id: "tools", label: "Tools", icon: Hammer },
   { id: "experience", label: "Experience", icon: Briefcase },
   { id: "contact", label: "Contact", icon: Mail },
 ] as const;

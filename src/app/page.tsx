@@ -1,6 +1,7 @@
 import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
 import { Skills } from "@/components/skills";
+import { Tools } from "@/components/tools";
 import { Experience } from "@/components/experience";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
@@ -21,7 +22,11 @@ export default function Home() {
           <section id="skills" className="min-h-screen py-20">
             <Skills />
           </section>
-          
+
+          <section id="tools" className="min-h-screen py-20">
+            <Tools />
+          </section>
+
           <section id="experience" className="min-h-screen pb-20">
             <Experience />
           </section>
